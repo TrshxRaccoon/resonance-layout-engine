@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import AnimatedColorText from "@/components/AnimatedColorText";
+import { Globe, BriefcaseBusiness, TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
@@ -38,11 +39,15 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           {/* Stat 1 */}
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="flex items-end justify-center gap-3 mb-4">
+              <BriefcaseBusiness
+                className="w-10 h-10 md:w-20 md:h-20 text-gray-300 mb-2"
+                strokeWidth={1.75}
+              />
               <span className="text-[80px] md:text-[100px] font-display font-bold text-gray-300 leading-none">
                 250
               </span>
-              <span className="text-[50px] md:text-[60px] font-display font-light text-gray-300 leading-none">
+              <span className="text-[50px] md:text-[60px] font-display font-bold text-gray-300 leading-none translate-y-[-80%] translate-x-[-40%]">
                 +
               </span>
             </div>
@@ -53,11 +58,15 @@ const About = () => {
 
           {/* Stat 2 */}
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="flex items-end justify-center gap-3 mb-4">
+              <Globe
+                className="w-10 h-10 md:w-20 md:h-20 text-gray-300 mb-2"
+                strokeWidth={1.75}
+              />
               <span className="text-[80px] md:text-[100px] font-display font-bold text-gray-300 leading-none">
                 20
               </span>
-              <span className="text-[50px] md:text-[60px] font-display font-light text-gray-300 leading-none">
+              <span className="text-[50px] md:text-[60px] font-display font-bold text-gray-300 leading-none translate-y-[-80%] translate-x-[-40%]">
                 +
               </span>
             </div>
@@ -68,11 +77,15 @@ const About = () => {
 
           {/* Stat 3 */}
           <div className="text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="flex items-end justify-center gap-3 mb-4">
+              <TrendingUp
+                className="w-10 h-10 md:w-20 md:h-20 text-gray-300 mb-2"
+                strokeWidth={1.75}
+              />
               <span className="text-[80px] md:text-[100px] font-display font-bold text-gray-300 leading-none">
                 10
               </span>
-              <span className="text-[50px] md:text-[60px] font-display font-light text-gray-300 leading-none">
+              <span className="text-[50px] md:text-[60px] font-display font-bold text-gray-300 leading-none translate-y-[-80%] translate-x-[-40%]">
                 +
               </span>
             </div>
@@ -139,18 +152,148 @@ const About = () => {
       </section>
 
       {/* Meet Our Team Section */}
-      <section className="w-full bg-[#100a44] py-20 px-10 md:px-16">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="font-display text-[60px] md:text-[80px] lg:text-[100px] font-bold text-[#4ab6ff] mb-12 leading-tight">
-            Meet our team
-          </h2>
+      <section className="relative w-full overflow-hidden bg-[#062b3b] py-24 px-6 md:px-12 lg:px-20">
+        {/* Background Glow */}
+        <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_top,rgba(74,182,255,0.25),transparent_55%)]" />
 
-          <div className="max-w-[1200px]">
-            <AnimatedColorText
-              whiteText="Guided by strong vision and thoughtful, Resonance is proud to be a reliable"
-              blueText="partner for major creative initiatives"
-            />
+        <div className="relative z-10 max-w-7xl mx-auto">
+          {/* Heading */}
+          <div className="max-w-5xl relative z-20">
+            <h2 className="font-display text-[56px] md:text-[80px] lg:text-[100px] font-bold text-[#29a7ff] leading-[0.95] mb-8">
+              Meet our team
+            </h2>
+
+            <div className="max-w-[1100px] text-white text-[32px] md:text-[46px] lg:text-[58px] font-semibold leading-[0.95] tracking-tight">
+              Guided by strong vision and thoughtful, Resonance is proud to be a reliable
+              <span className="text-[#1c4e63]"> partner for major creative initiatives in India and beyond.</span>
+            </div>
           </div>
+
+          {/* Team Visual Composition */}
+          <div className="relative mt-24 min-h-[700px] flex items-end justify-center">
+            {/* Left Info Card */}
+            <div className="absolute left-0 bottom-32 z-10 bg-[#2b6177]/70 backdrop-blur-sm p-6 w-[240px] md:w-[280px] text-white shadow-2xl">
+              <h3 className="text-[#29a7ff] font-semibold text-lg mb-3">
+                Abhyuday Grover
+              </h3>
+
+              <p className="text-sm leading-relaxed text-white/85 mb-3">
+                Multiple campaigns for more than 50 brands/corporates in varied mediums.
+              </p>
+
+              <p className="text-sm leading-relaxed text-white/70">
+                Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content creation.
+              </p>
+            </div>
+
+            {/* Main Team Images */}
+            <div className="relative flex items-end justify-center">
+              {/* Back Person */}
+              <img
+                src="/assets/images/team/team-1.png"
+                alt="Team member"
+                className="relative z-10 w-[320px] md:w-[420px] lg:w-[500px] object-contain grayscale contrast-125 brightness-90"
+              />
+
+              {/* Front Person */}
+              <img
+                src="/assets/images/team/team-2.png"
+                alt="Team member"
+                className="absolute bottom-0 right-[-20%] z-20 w-[280px] md:w-[360px] lg:w-[440px] object-contain grayscale contrast-125 brightness-90"
+              />
+            </div>
+
+            {/* Right Info Card */}
+            <div className="absolute right-0 bottom-12 z-10 bg-[#2b6177]/70 backdrop-blur-sm p-6 w-[240px] md:w-[280px] text-white shadow-2xl">
+              <h3 className="text-[#29a7ff] font-semibold text-lg mb-3">
+                Utsarg Grover
+              </h3>
+
+              <p className="text-sm leading-relaxed text-white/85 mb-3">
+                Multiple campaigns for more than 50 brands/corporates in varied mediums.
+              </p>
+
+              <p className="text-sm leading-relaxed text-white/70">
+                Branding, Digital Marketing, Mainline advertising, TVC production, Audio Visual films and Content creation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Members Grid */}
+      <section className="w-full bg-[#062b3b] px-[5%] md:px-[8%] lg:px-[10%] pb-24">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-[2px]">
+          {[
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-1.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-2.jpg",
+              info: true,
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-3.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-4.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-5.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-6.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-7.jpg",
+            },
+            {
+              name: "Lorem Ipsum",
+              image: "/assets/images/team/member-8.jpg",
+            },
+          ].map((member, index) => (
+            <div
+              key={index}
+              className="relative aspect-[0.8] overflow-hidden bg-[#1e566b]"
+            >
+              {member.info ? (
+                <div className="w-full h-full bg-[#1e566b] p-6 md:p-8 flex flex-col justify-start text-white">
+                  <h3 className="text-[#29a7ff] text-lg md:text-xl font-semibold mb-4">
+                    {member.name}
+                  </h3>
+
+                  <p className="text-xs md:text-sm leading-relaxed text-white/90 mb-4">
+                    Multiple campaigns for more than 50 brands/corporates in varied mediums.
+                  </p>
+
+                  <p className="text-xs md:text-sm leading-relaxed text-white/75">
+                    Branding, Digital Marketing, Mainline advertising, Product photography, TVC production, Audio Visual films and Content Creation.
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="absolute inset-0 w-full h-full object-cover grayscale"
+                  />
+
+                  <div className="absolute inset-0 bg-black/15" />
+
+                  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-[#29a7ff] font-semibold text-sm md:text-xl text-center whitespace-nowrap">
+                    {member.name}
+                  </div>
+                </>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
