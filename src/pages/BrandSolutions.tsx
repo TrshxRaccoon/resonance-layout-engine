@@ -359,7 +359,15 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "CONOSH",
     image: "/assets/images/CaseStudies/conosh-1.png",
-    caseStudyImage: "/assets/images/CaseStudies/conosh.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/for\ website-23.png",
+    galleryImages: [
+        "/assets/images/CaseStudies/for\ website-23.png",
+        "/assets/images/CaseStudies/for\ website-20.png",
+        "/assets/images/CaseStudies/for\ website-21.png",
+        "/assets/images/CaseStudies/for\ website-22.png",
+        "/assets/images/CaseStudies/for\ website-24.png",
+        "/assets/images/CaseStudies/for\ website-25.png",
+    ],
     client: "CONOSH",
     year: "2025",
     service: "Brand Solutions",
@@ -367,7 +375,12 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "OPPO",
     image: "/assets/images/CaseStudies/oppo-1.png",
-    caseStudyImage: "/assets/images/CaseStudies/oppo.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/oppo-1.png",
+    galleryImages: [
+        "/assets/images/CaseStudies/oppo-1.png",
+        "/assets/images/CaseStudies/oppo-2.png",
+        "/assets/images/CaseStudies/oppo-3.png",
+    ],
     client: "OPPO",
     year: "2024",
     service: "Video Editing & Animation",
@@ -375,7 +388,15 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "Mahindra XUV 500",
     image: "/assets/images/CaseStudies/mahindra1.png",
-    caseStudyImage: "/assets/images/CaseStudies/mahindra-xuv500.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/mahindra1.png",
+    galleryImages: [
+        "/assets/images/CaseStudies/for\ website-31.png",
+        "/assets/images/CaseStudies/for\ website-32.png",
+        "/assets/images/CaseStudies/for\ website-33.png",
+        "/assets/images/CaseStudies/for\ website-34.png",
+        "/assets/images/CaseStudies/for\ website-35.png",
+        "/assets/images/CaseStudies/for\ website-36.png",
+    ],
     client: "Mahindra XUV 500",
     year: "2018",
     service: "Campaign Production",
@@ -384,6 +405,15 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
     title: "Vraj Group",
     image: "/assets/images/CaseStudies/Vraj_meradian.png",
     caseStudyImage: "/assets/images/CaseStudies/Vraj_meradian.png",
+    galleryImages: [
+        "/assets/images/CaseStudies/Vraj_meridian.png",
+        "/assets/images/CaseStudies/Vraj-meridian-logo.png",
+        "/assets/images/CaseStudies/2.png",
+        "/assets/images/CaseStudies/3-1.png",
+        "/assets/images/CaseStudies/4.png",
+        "/assets/images/CaseStudies/5.png",
+
+    ],
     client: "Vraj Group",
     year: "2024",
     service: "Brand Campaign",
@@ -391,7 +421,13 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "Estuary",
     image: "/assets/images/CaseStudies/estuary1.png",
-    caseStudyImage: "/assets/images/CaseStudies/estuary.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/estuary1.png",
+    galleryImages: [
+        "/assets/images/CaseStudies/estuary1.png",
+        "/assets/images/CaseStudies/for\ website-27.png",
+        "/assets/images/CaseStudies/for\ website-26.png",
+        "/assets/images/CaseStudies/for\ website-28.png",
+    ],
     client: "Estuary",
     year: "2020",
     service: "Digital Marketing",
@@ -399,15 +435,27 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "Calamus One - Ultrabike",
     image: "/assets/images/CaseStudies/calamus1.png",
-    caseStudyImage: "/assets/images/CaseStudies/ultrabike.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/calamus1.png",
+    galleryImages: [
+        "assets/images/CaseStudies/calamus1.png",
+        "assets/images/CaseStudies/1.png",
+        "assets/images/CaseStudies/2.png",
+    ],
     client: "Calamus One - Ultrabike",
     year: "2019",
     service: "Brand Film",
   },
   {
     title: "Puravankara",
-    image: "/assets/images/CaseStudies/puravankara.jpg",
-    caseStudyImage: "/assets/images/CaseStudies/puravankara.jpg",
+    image: "/assets/images/CaseStudies/p5.png",
+    caseStudyImage: "/assets/images/CaseStudies/p5.png",
+    galleryImages: [
+        "assets/images/CaseStudies/p5.png",
+        "assets/images/CaseStudies/p1.jpeg",
+        "assets/images/CaseStudies/p2.png",
+        "assets/images/CaseStudies/p3.png",
+        "assets/images/CaseStudies/p4.png",
+    ],
     client: "Puravankara",
     year: "2022",
     service: "Real Estate Marketing",
@@ -415,7 +463,13 @@ const caseStudyShowcase: BrandShowcaseItem[] = [
   {
     title: "Elegant Builders & Developers",
     image: "/assets/images/CaseStudies/elegant1.png",
-    caseStudyImage: "/assets/images/CaseStudies/elegant-builders.jpg",
+    caseStudyImage: "/assets/images/CaseStudies/elegant1.png",
+    galleryImages: [
+        "assets/images/CaseStudies/elegant1.png",
+        "assets/images/CaseStudies/elegant2.png",
+        "assets/images/CaseStudies/elegant3.png",
+        "assets/images/CaseStudies/elegant4.png",
+    ],
     client: "Elegant Builders & Developers",
     year: "2024",
     service: "Brand Solutions",
@@ -430,8 +484,7 @@ const BrandSolutions = () => {
   const [activeShowcaseVideoUrl, setActiveShowcaseVideoUrl] = useState<
     string | null
   >(null);
-  const [galleryOpen, setGalleryOpen] = useState(false);
-const [galleryIndex, setGalleryIndex] = useState(0);
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
   const activeCaseStudy =
     activeCaseStudyIndex !== null
@@ -440,22 +493,23 @@ const [galleryIndex, setGalleryIndex] = useState(0);
 
   const openCaseStudy = (index: number) => {
     setActiveCaseStudyIndex(index);
+    setGalleryIndex(0);
   };
 
   const closeCaseStudy = () => setActiveCaseStudyIndex(null);
 
-  const prevCaseStudy = () => {
-    if (activeCaseStudyIndex === null) return;
-    setActiveCaseStudyIndex(
-      (activeCaseStudyIndex - 1 + caseStudyShowcase.length) %
-        caseStudyShowcase.length,
+  const prevGalleryImage = () => {
+    if (!activeCaseStudy?.galleryImages?.length) return;
+    setGalleryIndex(
+      (galleryIndex - 1 + activeCaseStudy.galleryImages.length) %
+        activeCaseStudy.galleryImages.length,
     );
   };
 
-  const nextCaseStudy = () => {
-    if (activeCaseStudyIndex === null) return;
-    setActiveCaseStudyIndex(
-      (activeCaseStudyIndex + 1) % caseStudyShowcase.length,
+  const nextGalleryImage = () => {
+    if (!activeCaseStudy?.galleryImages?.length) return;
+    setGalleryIndex(
+      (galleryIndex + 1) % activeCaseStudy.galleryImages.length,
     );
   };
 
@@ -659,7 +713,7 @@ const [galleryIndex, setGalleryIndex] = useState(0);
 
       {/* Brand Solutions — Showcase */}
       <section className="w-full bg-[#e7e5df] pb-24 px-10 md:px-16">
-        <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12">
+        <h2 className="font-display text-3xl md:text-4xl font-normal text-gray-400 mb-12 translate-y-3">
           Brand Solutions <span className="text-gray-400">|</span>{" "}
           <span className="font-bold text-gray-700">Case Studies</span>
         </h2>
@@ -714,206 +768,172 @@ const [galleryIndex, setGalleryIndex] = useState(0);
               <X className="w-5 h-5 text-gray-600" />
             </button>
 
-              <>
-                {/* Prev */}
-                <button
-                  type="button"
-                  aria-label="Previous case study"
-                  onClick={prevCaseStudy}
-                  className="fixed left-4 top-1/2 -translate-y-1/2 z-[60] w-11 h-11 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-200"
-                >
-                  <ChevronLeft className="w-5 h-5 text-gray-600" />
-                </button>
-
-                {/* Next */}
-                <button
-                  type="button"
-                  aria-label="Next case study"
-                  onClick={nextCaseStudy}
-                  className="fixed right-4 top-1/2 -translate-y-1/2 z-[60] w-11 h-11 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors duration-200"
-                >
-                  <ChevronRight className="w-5 h-5 text-gray-600" />
-                </button>
-              </>
-
             {/* Content */}
             <div className="min-h-screen flex flex-col lg:flex-row">
-                {/* Left — full-height image */}
-                <motion.div
-                  key={activeCaseStudy.image + activeCaseStudyIndex}
-                  initial={{ opacity: 0, x: -24 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                  className="w-full lg:w-[55%] relative min-h-[40vh] lg:min-h-screen"
-                >
-                  <div className="absolute inset-0 bg-[#f0ede6]" />
-                  <div className="absolute inset-0 flex items-center justify-center p-8">
-  <div className="aspect-square w-[85%] max-w-[650px] overflow-hidden rounded-lg bg-white">
-    <img
-      src={activeCaseStudy.caseStudyImage || activeCaseStudy.image}
-      alt={`${activeCaseStudy.title} case study`}
-      className="w-full h-full object-cover"
-    />
-  </div>
-</div>
-<button
-  onClick={() => {
-    setGalleryIndex(0);
-    setGalleryOpen(true);
-  }}
-  className="
-    mt-6
-    px-6
-    py-3
-    border
-    border-gray-300
-    uppercase
-    tracking-widest
-    text-sm
-    text-gray-600
-    hover:bg-gray-900
-    hover:text-white
-    transition-all
-  "
->
-  View Gallery
-</button>
-                  {/* Counter badge */}
-                  <div className="absolute bottom-6 left-6 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs text-gray-500 uppercase tracking-widest">
-                    {(activeCaseStudyIndex ?? 0) + 1} /{" "}
-                    {caseStudyShowcase.length}
+              {/* Left — full-height image */}
+              <motion.div
+                key={activeCaseStudy.image + activeCaseStudyIndex}
+                initial={{ opacity: 0, x: -24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                className="w-full lg:w-[55%] relative min-h-[40vh] lg:min-h-screen"
+              >
+                <div className="absolute inset-0 bg-[#f0ede6]" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-8 gap-6">
+                  <div className="relative w-[85%] max-w-[650px]">
+                    {activeCaseStudy.galleryImages?.length ? (
+                      <button
+                        type="button"
+                        aria-label="Previous gallery image"
+                        onClick={prevGalleryImage}
+                        className="absolute left-0 top-1/2 -translate-x-[140%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white shadow-lg hover:bg-gray-100 flex items-center justify-center transition-colors duration-200"
+                      >
+                        <ChevronLeft className="w-5 h-5 text-gray-700" />
+                      </button>
+                    ) : null}
+
+                    <div className="aspect-square overflow-hidden rounded-lg bg-white">
+                      <img
+                        src={
+                          activeCaseStudy.galleryImages?.[galleryIndex] ||
+                          activeCaseStudy.caseStudyImage ||
+                          activeCaseStudy.image
+                        }
+                        alt={`${activeCaseStudy.title} case study`}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+
+                    {activeCaseStudy.galleryImages?.length ? (
+                      <button
+                        type="button"
+                        aria-label="Next gallery image"
+                        onClick={nextGalleryImage}
+                        className="absolute right-0 top-1/2 translate-x-[140%] -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-white shadow-lg hover:bg-gray-100 flex items-center justify-center transition-colors duration-200"
+                      >
+                        <ChevronRight className="w-5 h-5 text-gray-700" />
+                      </button>
+                    ) : null}
                   </div>
-                </motion.div>
 
-                {/* Right — metadata */}
-                <motion.div
-                  key={activeCaseStudyIndex}
-                  initial={{ opacity: 0, x: 24 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
-                  className="w-full lg:w-[45%] flex flex-col justify-center px-10 md:px-16 py-24 lg:py-32"
-                >
-                  {/* Section label */}
-                  <p className="text-xs uppercase tracking-widest text-gray-400 mb-8">
-                    Brand Solutions | Case Study
-                  </p>
-
-                  {/* Title */}
-                  <h2 className="font-display text-[36px] md:text-[52px] font-bold text-gray-800 leading-none mb-10">
-                    {activeCaseStudy.title}
-                  </h2>
-
-                  {/* Metadata rows */}
-                  <div className="space-y-0 mb-8">
-                    <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
-                      <span className="text-gray-400 text-sm uppercase tracking-wide">
-                        Client
-                      </span>
-                      <span className="text-gray-800 font-bold uppercase tracking-wide text-sm">
-                        {activeCaseStudy.client}
-                      </span>
-                    </div>
-                    <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
-                      <span className="text-gray-400 text-sm uppercase tracking-wide">
-                        Service
-                      </span>
-                      <span className="text-gray-800 font-bold uppercase tracking-wide text-sm">
-                        {activeCaseStudy.service}
-                      </span>
-                    </div>
-                    <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
-                      <span className="text-gray-400 text-sm uppercase tracking-wide">
-                        Year
-                      </span>
-                      <span className="text-gray-800 font-bold text-sm">
-                        {activeCaseStudy.year}
-                      </span>
-                    </div>
-                    {activeCaseStudy.videoHighlight && (
-                      <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
-                        <span className="text-gray-400 text-sm uppercase tracking-wide">
-                          Reach
-                        </span>
-                        <span className="text-[#1498e1] font-bold text-sm">
-                          {activeCaseStudy.videoHighlight}
-                        </span>
+                  {activeCaseStudy.galleryImages?.length ? (
+                    <div className="absolute bottom-1 left-1/2 -translate-x-1/2 w-[85%] max-w-[750px]">
+                      <p className="mb-3 text-xs uppercase tracking-[0.2em] text-gray-500">
+                        Gallery
+                      </p>
+                      <div className="overflow-x-auto overflow-y-hidden scrollbar-hide pb-2">
+                        <div className="flex gap-3 w-max pr-2">
+                          {activeCaseStudy.galleryImages.map((image, index) => (
+                            <button
+                              key={index}
+                              type="button"
+                              onClick={() => setGalleryIndex(index)}
+                              className={`flex-shrink-0 w-24 h-24 md:w-28 md:h-28 overflow-hidden rounded-md border-2 transition-all duration-200 ${
+                                galleryIndex === index
+                                  ? 'border-[#1498e1]'
+                                  : 'border-transparent hover:border-gray-300'
+                              }`}
+                            >
+                              <img
+                                src={image}
+                                alt={`Gallery ${index + 1}`}
+                                className="w-full h-full object-cover"
+                              />
+                            </button>
+                          ))}
+                        </div>
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  ) : null}
+                </div>
+                {/* Counter badge */}
+                <div className="absolute bottom-6 left-6 bg-white/80 backdrop-blur-sm px-3 py-1 text-xs text-gray-500 uppercase tracking-widest">
+                  {(activeCaseStudyIndex ?? 0) + 1} /{" "}
+                  {caseStudyShowcase.length}
+                </div>
+              </motion.div>
 
-                  {/* Objective */}
-                  {activeCaseStudy.objective && (
-                    <div className="mb-10">
-                      <p className="text-gray-400 text-xs uppercase tracking-widest mb-2">
-                        Objective
-                      </p>
-                      <p className="text-gray-600 text-[15px] leading-relaxed">
-                        {activeCaseStudy.objective}
-                      </p>
+              {/* Right — metadata */}
+              <motion.div
+                key={activeCaseStudyIndex}
+                initial={{ opacity: 0, x: 24 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.4, ease: [0.4, 0, 0.2, 1] }}
+                className="w-full lg:w-[45%] flex flex-col justify-center px-10 md:px-16 py-24 lg:py-32"
+              >
+                {/* Section label */}
+                <p className="text-xs uppercase tracking-widest text-gray-400 mb-8">
+                  Brand Solutions | Case Study
+                </p>
+
+                {/* Title */}
+                <h2 className="font-display text-[36px] md:text-[52px] font-bold text-gray-800 leading-none mb-10">
+                  {activeCaseStudy.title}
+                </h2>
+
+                {/* Metadata rows */}
+                <div className="space-y-0 mb-8">
+                  <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
+                    <span className="text-gray-400 text-sm uppercase tracking-wide">
+                      Client
+                    </span>
+                    <span className="text-gray-800 font-bold uppercase tracking-wide text-sm">
+                      {activeCaseStudy.client}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
+                    <span className="text-gray-400 text-sm uppercase tracking-wide">
+                      Service
+                    </span>
+                    <span className="text-gray-800 font-bold uppercase tracking-wide text-sm">
+                      {activeCaseStudy.service}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
+                    <span className="text-gray-400 text-sm uppercase tracking-wide">
+                      Year
+                    </span>
+                    <span className="text-gray-800 font-bold text-sm">
+                      {activeCaseStudy.year}
+                    </span>
+                  </div>
+                  {activeCaseStudy.videoHighlight && (
+                    <div className="grid grid-cols-[110px_1fr] items-baseline border-b border-gray-300 py-3">
+                      <span className="text-gray-400 text-sm uppercase tracking-wide">
+                        Reach
+                      </span>
+                      <span className="text-[#1498e1] font-bold text-sm">
+                        {activeCaseStudy.videoHighlight}
+                      </span>
                     </div>
                   )}
+                </div>
 
-                  {/* Dismiss hint */}
-                  <button
-                    onClick={closeCaseStudy}
-                    className="self-start text-xs uppercase tracking-widest text-gray-400 hover:text-gray-700 transition-colors duration-200 border-b border-gray-300 hover:border-gray-600 pb-0.5"
-                  >
-                    ← Back to Showcase
-                  </button>
-                </motion.div>
-              </div>
-          </motion.div>
-        )}
-            </AnimatePresence>
+                {/* Objective */}
+                {activeCaseStudy.objective && (
+                  <div className="mb-10">
+                    <p className="text-gray-400 text-xs uppercase tracking-widest mb-2">
+                      Objective
+                    </p>
+                    <p className="text-gray-600 text-[15px] leading-relaxed">
+                      {activeCaseStudy.objective}
+                    </p>
+                  </div>
+                )}
 
-      {/* Gallery Modal */}
-      <AnimatePresence>
-        {galleryOpen && activeCaseStudy?.galleryImages && (
-          <motion.div
-            className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <button
-              onClick={() => setGalleryOpen(false)}
-              className="absolute top-6 right-6 text-white"
-            >
-              <X size={32} />
-            </button>
-
-            <button
-              onClick={() =>
-                setGalleryIndex(
-                  (galleryIndex - 1 + activeCaseStudy.galleryImages.length) %
-                    activeCaseStudy.galleryImages.length
-                )
-              }
-              className="absolute left-8 text-white"
-            >
-              <ChevronLeft size={40} />
-            </button>
-
-            <img
-              src={activeCaseStudy.galleryImages[galleryIndex]}
-              alt=""
-              className="max-w-[85vw] max-h-[85vh] object-contain"
-            />
-
-            <button
-              onClick={() =>
-                setGalleryIndex(
-                  (galleryIndex + 1) %
-                    activeCaseStudy.galleryImages.length
-                )
-              }
-              className="absolute right-8 text-white"
-            >
-              <ChevronRight size={40} />
-            </button>
+                {/* Dismiss hint */}
+                <button
+                  onClick={closeCaseStudy}
+                  className="self-start text-xs uppercase tracking-widest text-gray-400 hover:text-gray-700 transition-colors duration-200 border-b border-gray-300 hover:border-gray-600 pb-0.5"
+                >
+                  ← Back to Showcase
+                </button>
+              </motion.div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
+
 
       <Footer theme="dark" />
     </>
